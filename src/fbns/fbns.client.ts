@@ -88,11 +88,15 @@ export class FbnsClient {
         });
         this.client.$warning.subscribe(this.warning$);
         this.client.$error.subscribe(this.error$);
-        this.client.$disconnect.subscribe(() =>
-            this.safeDisconnect
-                ? this.disconnect$.next()
-                : this.error$.next(new ClientDisconnectedError('MQTToTClient got disconnected.')),
-        );
+        this.client.$disconnect.subscribe(() => {
+            if (this.safeDisconnect)
+                this.disconnect$.next();
+            else {
+                this.error$.next(new ClientDisconnectedError('MQTToTClient got disconnected.'));
+                this.disconnect$.next();
+            }
+
+        });
         this.client
             .listen<MqttMessage>({ topic: FbnsTopics.FBNS_MESSAGE.id })
             .subscribe(msg => this.handleMessage(msg));
