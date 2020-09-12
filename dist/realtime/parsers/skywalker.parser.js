@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const thrift_1 = require("../../thrift");
+class SkywalkerParser {
+    parseMessage(topic, payload) {
+        return {
+            topic,
+            data: thrift_1.thriftReadToObject(payload, SkywalkerParser.descriptors),
+        };
+    }
+}
+exports.SkywalkerParser = SkywalkerParser;
+SkywalkerParser.descriptors = [thrift_1.ThriftDescriptors.int32('topic', 1), thrift_1.ThriftDescriptors.binary('payload', 2)];
+//# sourceMappingURL=skywalker.parser.js.map
