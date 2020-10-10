@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BufferReader = exports.thriftReadToObject = exports.thriftRead = void 0;
 const thrift_1 = require("./thrift");
 const errors_1 = require("../errors");
 function thriftRead(message) {
@@ -202,7 +203,7 @@ class BufferReader {
         this.readInt32 = this.readSmallInt;
         this.readByte = () => this.buffer.readUInt8(this.move(1));
         this.readSByte = () => this.buffer.readInt8(this.move(1));
-        this.readString = (len) => this.buffer.toString('UTF-8', this.move(len), this._position);
+        this.readString = (len) => this.buffer.toString('utf8', this.move(len), this._position);
         this.buffer = buffer;
     }
     get stack() {

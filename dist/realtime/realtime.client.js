@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.RealtimeClient = void 0;
 const constants_1 = require("../constants");
 const events_1 = require("events");
 const commands_1 = require("./commands");

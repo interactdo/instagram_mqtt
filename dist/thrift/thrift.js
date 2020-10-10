@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.int64ToNumber = exports.ThriftDescriptors = exports.isThriftBoolean = exports.ThriftTypes = void 0;
 exports.ThriftTypes = {
     STOP: 0x00,
     TRUE: 0x01,

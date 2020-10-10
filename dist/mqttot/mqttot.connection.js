@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MQTToTConnection = void 0;
 const thrift_1 = require("../thrift");
 class MQTToTConnection {
     constructor(connectionData) {

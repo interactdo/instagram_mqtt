@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ThriftError = exports.IllegalArgumentError = exports.ConnectionFailedError = exports.InvalidStateError = exports.EmptyPacketError = exports.ClientDisconnectedError = void 0;
 class BaseError extends Error {
     constructor(message) {
         super(message);

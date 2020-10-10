@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.GraphqlParser = void 0;
 const thrift_1 = require("../../thrift");
 const shared_1 = require("../../shared");
 class GraphqlParser {

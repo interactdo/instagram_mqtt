@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.mqttotConnectFlow = exports.MQTToTClient = void 0;
 const mqttot_connect_request_packet_1 = require("./mqttot.connect-request-packet");
 const shared_1 = require("../shared");
 const URL = require("url");

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.GraphQLSubscriptions = exports.QueryIDs = void 0;
 const Chance = require("chance");
 // src: com.instagram.realtimeclient.RealtimeSubscription
 exports.QueryIDs = {

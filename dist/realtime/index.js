@@ -1,11 +1,18 @@
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./commands"));
-__export(require("./messages"));
-__export(require("./parsers"));
-__export(require("./subscriptions"));
-__export(require("./realtime.client"));
+__exportStar(require("./commands"), exports);
+__exportStar(require("./messages"), exports);
+__exportStar(require("./parsers"), exports);
+__exportStar(require("./subscriptions"), exports);
+__exportStar(require("./realtime.client"), exports);
 //# sourceMappingURL=index.js.map

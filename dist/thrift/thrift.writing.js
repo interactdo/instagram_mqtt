@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BufferWriter = exports.thriftWriteFromObject = void 0;
 const thrift_1 = require("./thrift");
 const errors_1 = require("../errors");
 function thriftWriteFromObject(obj, descriptors) {

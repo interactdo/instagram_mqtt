@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MQTToTConnectRequestPacket = void 0;
 const mqtts_1 = require("mqtts");
 const errors_1 = require("../errors");
 class MQTToTConnectRequestPacket extends mqtts_1.MqttPacket {

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MessageSyncMessageTypes = void 0;
 var MessageSyncMessageTypes;
 (function (MessageSyncMessageTypes) {
     MessageSyncMessageTypes["DELETION"] = "deletion";

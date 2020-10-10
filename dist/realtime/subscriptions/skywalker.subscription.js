@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SkywalkerSubscriptions = void 0;
 class SkywalkerSubscriptions {
     static directSub(userId) {
         return `ig/u/v1/${userId}`;

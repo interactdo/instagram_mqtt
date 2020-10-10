@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Commands = void 0;
 const shared_1 = require("../../shared");
 class Commands {
     constructor(client) {

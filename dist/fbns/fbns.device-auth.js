@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FbnsDeviceAuth = void 0;
 const decorators_1 = require("instagram-private-api/dist/decorators");
 const shared_1 = require("../shared");
 class FbnsDeviceAuth {
