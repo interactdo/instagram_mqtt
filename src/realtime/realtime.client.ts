@@ -105,7 +105,7 @@ export class RealtimeClient extends EventEmitter {
             clientInfo: {
                 userId: BigInt(Number(this.ig.state.cookieUserId)),
                 userAgent,
-                clientCapabilities: 183,
+                clientCapabilities: 191,// 183,
                 endpointCapabilities: 0,
                 publishFormat: 1,
                 noAutomaticForeground: false,
